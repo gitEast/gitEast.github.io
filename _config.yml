@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+## 配置：站点标题、副标题、关键字等
+title: East Wind
+subtitle: '111'
+description: '仿佛蹉跎光阴还无损于永恒呢'
+keywords: 'learning'
+author: East Wind
+language: zh-CN
 timezone: ''
 
 # URL
