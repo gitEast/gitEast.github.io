@@ -5,8 +5,8 @@
 # Site
 ## 配置：站点标题、副标题、关键字等
 title: East Wind
-subtitle: '111'
-description: '仿佛蹉跎光阴还无损于永恒呢'
+subtitle: '仿佛蹉跎光阴还无损于永恒呢'
+description: '真的很杂，可能会从计算机相关到人文、外语什么的都有，说不准2333maybe杂货铺？'
 keywords: 'learning'
 author: East Wind
 language: zh-CN
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
