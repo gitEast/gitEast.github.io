@@ -1,8 +1,11 @@
 ---
 title: Short Summary for 2021
 date: 2021-12-20 10:59:56
+categories:
+  - "一年总结"
 tags:
   - "summary"
+toc: true
 ---
 
 > 对 2021 做一个简短的总结，于我而言，应该是同以前很不一样的一年吧。
