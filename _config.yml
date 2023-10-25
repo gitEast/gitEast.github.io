@@ -2,7 +2,7 @@ title: 郑鳄
 subtitle: 天予不取，反受其咎
 description: 是只菜菜兔，近期沉迷于前端学习，当前进度 —— Computer Networking
 keywords: 来去随意
-author: East Wind
+author: 郑鳄
 language: zh-CN
 timezone: Asia/Shanghai
 url: https://giteast.github.io/
@@ -28,7 +28,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -59,7 +59,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: icarus
+theme: a4
 deploy:
   type: git
   repository: https://github.com/gitEast/gitEast.github.io
