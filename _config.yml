@@ -1,12 +1,12 @@
-title: 东风
+title: 郑鳄
 subtitle: 天予不取，反受其咎
-description: 是只菜菜兔，近期沉迷于前端学习，当前进度 —— 跑路三部曲之一
+description: 是只菜菜兔，近期沉迷于前端学习，当前进度 —— Computer Networking
 keywords: 来去随意
 author: East Wind
 language: zh-CN
 timezone: Asia/Shanghai
 url: https://giteast.github.io/
-permalink: ":year/:month/:day/:title/"
+permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
   trailing_index: true
@@ -17,15 +17,15 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: ":lang"
+i18n_dir: ':lang'
 skip_render: null
-new_post_name: ":title.md"
+new_post_name: ':title.md'
 default_layout: post
 titlecase: false
 external_link:
   enable: true
   field: site
-  exclude: ""
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -35,18 +35,18 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ""
+  tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ""
+  tab_replace: ''
 index_generator:
-  path: ""
+  path: ''
   per_page: 10
-  order_by: "-date"
+  order_by: '-date'
 default_category: uncategorized
 category_map: null
 tag_map: null
