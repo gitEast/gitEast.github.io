@@ -1,6 +1,7 @@
 ---
 title: Computer-Networking-04-Chapter-3
 date: 2023-12-05 21:57:06
+categories:
   - 'ComputerNetworking'
 tags:
   - 'Computer Networking: A Top-Down Approach'
