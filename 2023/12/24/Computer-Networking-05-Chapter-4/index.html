@@ -1,101 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
-    <meta name="description" content="Computer-Networking-05-Chapter-4" />
-    <meta name="hexo-theme-A4" content="v1.7.1" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>郑鳄 | 天予不取，反受其咎</title>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        郑鳄
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
 
     
-        
-<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
 
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
-    
-    
-<link rel="stylesheet" href="/css/ui.css">
- 
     
 <link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 5.4.0"></head>
-    
-    <body>
-        <div class="paper">
-            
-            
-            
-            
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">郑鳄</a> 
-            <span class="description">是只菜菜兔，近期沉迷于前端学习，当前进度 —— Computer Networking</span> 
-        </div>
-        
-    </div>
-    
-   
-    <ul class="nav">
-        
-            
-                <li><a href="/">首页</a></li>
-            
-        
-            
-                <li><a href="/list/">文章</a></li>
-            
-        
-            
-                <li><a href="/about/">关于</a></li>
-            
-        
-            
-                <li><a href="/tags/">标签</a></li>
-            
-        
-            
-                <li><a href="/categories/">分类</a></li>
-            
-        
-    </ul>
-</div> 
-        
-                    
-                    
 
-                    
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                        <div class="post-main">
-
-    
-        <div class="post-main-title">
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
             Computer-Networking-05-Chapter-4
-        </div>
-      
-    
-
-    <div class="post-md">
-        
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E7%A1%80%E9%98%85%E8%AF%BB"><span class="post-toc-text">一、基础阅读</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BA%8C%E3%80%81%E6%A3%80%E8%A7%86%E9%98%85%E8%AF%BB"><span class="post-toc-text">二、检视阅读</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-%E8%BF%99%E4%B8%80%E7%AB%A0%E5%9C%A8%E8%AE%B2%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="post-toc-text">2.1 这一章在讲什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-%E4%BD%9C%E8%80%85%E6%98%AF%E5%80%9F%E7%9D%80%E6%80%8E%E6%A0%B7%E7%9A%84%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E6%9D%A5%E9%99%88%E8%BF%B0%E4%BB%96%E5%AF%B9%E8%BF%99%E4%B8%AA%E4%B8%BB%E9%A2%98%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="post-toc-text">2.2 作者是借着怎样的整体架构来陈述他对这个主题的理解？</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%89%E3%80%81%E5%88%86%E6%9E%90%E9%98%85%E8%AF%BB"><span class="post-toc-text">三、分析阅读</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-%E6%9E%B6%E6%9E%84%E7%BA%B2%E8%A6%81"><span class="post-toc-text">3.1 架构纲要</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-1-%E5%93%AA%E4%B8%80%E7%B1%BB%EF%BC%9A%E5%AE%9E%E7%94%A8%E6%80%A7-VS-%E7%90%86%E8%AE%BA%E6%80%A7"><span class="post-toc-text">3.1.1 哪一类：实用性 VS 理论性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-2-%E4%BD%BF%E7%94%A8%E4%B8%80%E4%B8%AA%E5%8D%95%E4%B8%80%E7%9A%84%E5%8F%A5%E5%AD%90-or-%E6%9C%80%E5%A4%9A%E5%87%A0%E5%8F%A5%E8%AF%9D-%E4%B8%80%E5%B0%8F%E6%AE%B5%E6%96%87%E5%AD%97-%E6%9D%A5%E6%A6%82%E6%8B%AC%E5%86%85%E5%AE%B9"><span class="post-toc-text">3.1.2 使用一个单一的句子 or 最多几句话(一小段文字)来概括内容</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-3-%E5%B0%86%E9%87%8D%E8%A6%81%E7%AF%87%E7%AB%A0%E5%88%97%E4%B8%BE%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%AF%B4%E6%98%8E%E5%AE%83%E4%BB%AC%E5%A6%82%E4%BD%95%E6%8C%89%E7%85%A7%E9%A1%BA%E5%BA%8F%E7%BB%84%E6%88%90%E4%B8%80%E4%B8%AA%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84"><span class="post-toc-text">3.1.3 将重要篇章列举出来，说明它们如何按照顺序组成一个整体架构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-4-%E6%89%BE%E5%87%BA%E4%BD%9C%E8%80%85%E8%A6%81%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98"><span class="post-toc-text">3.1.4 找出作者要问的问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-%E8%AF%A0%E9%87%8A%E5%86%85%E5%AE%B9"><span class="post-toc-text">3.2 诠释内容</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-1-%E6%89%BE%E5%87%BA%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%8C%E9%80%8F%E8%BF%87%E5%AE%83%E4%BB%AC%E4%B8%8E%E4%BD%9C%E8%80%85%E8%BE%BE%E6%88%90%E5%85%B1%E8%AF%86"><span class="post-toc-text">3.2.1 找出关键字，透过它们与作者达成共识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-2-%E5%B0%86%E6%9C%AC%E7%AB%A0%E4%B8%AD%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E5%8F%A5%E5%AD%90%E5%9C%88%E5%87%BA%E6%9D%A5%EF%BC%8C%E6%89%BE%E5%87%BA%E5%85%B6%E4%B8%AD%E7%9A%84%E4%B8%BB%E6%97%A8"><span class="post-toc-text">3.2.2 将本章中最重要的句子圈出来，找出其中的主旨</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-3-%E4%BB%8E%E7%9B%B8%E5%85%B3%E6%96%87%E5%8F%A5%E7%9A%84%E5%85%B3%E8%81%94%E4%B8%AD%EF%BC%8C%E8%AE%BE%E6%B3%95%E6%9E%B6%E6%9E%84%E5%87%BA%E5%85%B6%E5%9F%BA%E6%9C%AC%E8%AE%BA%E8%BF%B0"><span class="post-toc-text">3.2.3 从相关文句的关联中，设法架构出其基本论述</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2-4-%E6%89%BE%E5%87%BA%E4%BD%9C%E8%80%85%E7%9A%84%E8%A7%A3%E7%AD%94%EF%BC%9A%E5%B7%B2%E8%A7%A3%E5%86%B3%E3%80%81%E6%9C%AA%E8%A7%A3%E5%86%B3%E3%80%81%E6%97%A0%E6%B3%95%E8%A7%A3%E5%86%B3"><span class="post-toc-text">3.2.4 找出作者的解答：已解决、未解决、无法解决</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-3-%E6%89%B9%E8%AF%84%E5%BC%8F%E9%98%85%E8%AF%BB"><span class="post-toc-text">3.3 批评式阅读</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vocabulary"><span class="post-toc-text">Vocabulary</span></a></li></ol>
-        
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
         <h2 id="一、基础阅读"><a href="#一、基础阅读" class="headerlink" title="一、基础阅读"></a>一、基础阅读</h2><p>该部分将放置于<a href="#Vocabulary">本篇最后</a>。</p>
 <h2 id="二、检视阅读"><a href="#二、检视阅读" class="headerlink" title="二、检视阅读"></a>二、检视阅读</h2><h3 id="2-1-这一章在讲什么？"><a href="#2-1-这一章在讲什么？" class="headerlink" title="2.1 这一章在讲什么？"></a>2.1 这一章在讲什么？</h3><h3 id="2-2-作者是借着怎样的整体架构来陈述他对这个主题的理解？"><a href="#2-2-作者是借着怎样的整体架构来陈述他对这个主题的理解？" class="headerlink" title="2.2 作者是借着怎样的整体架构来陈述他对这个主题的理解？"></a>2.2 作者是借着怎样的整体架构来陈述他对这个主题的理解？</h3><h2 id="三、分析阅读"><a href="#三、分析阅读" class="headerlink" title="三、分析阅读"></a>三、分析阅读</h2><h3 id="3-1-架构纲要"><a href="#3-1-架构纲要" class="headerlink" title="3.1 架构纲要"></a>3.1 架构纲要</h3><h3 id="3-1-1-哪一类：实用性-VS-理论性"><a href="#3-1-1-哪一类：实用性-VS-理论性" class="headerlink" title="3.1.1 哪一类：实用性 VS 理论性"></a>3.1.1 哪一类：实用性 VS 理论性</h3><h3 id="3-1-2-使用一个单一的句子-or-最多几句话-一小段文字-来概括内容"><a href="#3-1-2-使用一个单一的句子-or-最多几句话-一小段文字-来概括内容" class="headerlink" title="3.1.2 使用一个单一的句子 or 最多几句话(一小段文字)来概括内容"></a>3.1.2 使用一个单一的句子 or 最多几句话(一小段文字)来概括内容</h3><h3 id="3-1-3-将重要篇章列举出来，说明它们如何按照顺序组成一个整体架构"><a href="#3-1-3-将重要篇章列举出来，说明它们如何按照顺序组成一个整体架构" class="headerlink" title="3.1.3 将重要篇章列举出来，说明它们如何按照顺序组成一个整体架构"></a>3.1.3 将重要篇章列举出来，说明它们如何按照顺序组成一个整体架构</h3><h3 id="3-1-4-找出作者要问的问题"><a href="#3-1-4-找出作者要问的问题" class="headerlink" title="3.1.4 找出作者要问的问题"></a>3.1.4 找出作者要问的问题</h3><h3 id="3-2-诠释内容"><a href="#3-2-诠释内容" class="headerlink" title="3.2 诠释内容"></a>3.2 诠释内容</h3><h3 id="3-2-1-找出关键字，透过它们与作者达成共识"><a href="#3-2-1-找出关键字，透过它们与作者达成共识" class="headerlink" title="3.2.1 找出关键字，透过它们与作者达成共识"></a>3.2.1 找出关键字，透过它们与作者达成共识</h3><h3 id="3-2-2-将本章中最重要的句子圈出来，找出其中的主旨"><a href="#3-2-2-将本章中最重要的句子圈出来，找出其中的主旨" class="headerlink" title="3.2.2 将本章中最重要的句子圈出来，找出其中的主旨"></a>3.2.2 将本章中最重要的句子圈出来，找出其中的主旨</h3><h3 id="3-2-3-从相关文句的关联中，设法架构出其基本论述"><a href="#3-2-3-从相关文句的关联中，设法架构出其基本论述" class="headerlink" title="3.2.3 从相关文句的关联中，设法架构出其基本论述"></a>3.2.3 从相关文句的关联中，设法架构出其基本论述</h3><h3 id="3-2-4-找出作者的解答：已解决、未解决、无法解决"><a href="#3-2-4-找出作者的解答：已解决、未解决、无法解决" class="headerlink" title="3.2.4 找出作者的解答：已解决、未解决、无法解决"></a>3.2.4 找出作者的解答：已解决、未解决、无法解决</h3><h3 id="3-3-批评式阅读"><a href="#3-3-批评式阅读" class="headerlink" title="3.3 批评式阅读"></a>3.3 批评式阅读</h3><h2 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h2><table>
 <thead>
@@ -264,89 +197,58 @@
 
     </div>
 
-    <div class="post-meta">
-        <i>
-        
-            <span>2023-12-24</span>
-            
-                <span>该篇文章被 郑鳄</span>
-            
-            
-                <span>打上标签:
-                    
-                    
-                        <a href='/tags/Computer-Networking-A-Top-Down-Approach/'>
-                            Computer Networking: A Top-Down Approach
-                        </a>
-                    
-                        <a href='/tags/%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/'>
-                            理论基础
-                        </a>
-                    
-                </span>
-             
-             
-                <span>归为分类:
-                    
-                    
-                        <a href='/categories/ComputerNetworking/'>
-                            ComputerNetworking
-                        </a>
-                    
-                </span>
-            
-        
-        </i>
-    </div>
-    
-        
-
-     
-</div>
-
-
-
-                    
-                    
-                    <div class="footer">
-    
-        <span> 
-            © 2021-2023 China 
-
-            
-                
-
-            
-        </span>
     
 </div>
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
-    
-            <span>天予不取，反受其咎</span>
-            
-                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
-            
-    
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
 </div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
 
 
-    
-<link rel="stylesheet" href="/css/a11y-dark.min.css">
+<script src="/libs/highlight/highlight.pack.js"></script>
 
-    
-<script src="/js/highlight.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
 
-    
-<script src="/js/highlightjs-line-numbers.js"></script>
+<script src="/js/js.js"></script>
 
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
 
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
 
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-</script>
-                </div>
-            
-    </body>
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
 </html>
